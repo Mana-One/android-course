@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">OpenFoodFacts</string>
+    <string name="barcode">Barcode : %1$d</string>
+    <string name="quantity">Quantity: %1$s</string>
+    <string name="countries">Countries : %1$s</string>
+    <string name="ingredients">Ingredients : %1$s</string>
+    <string name="allergens">Allergens : %1$s</string>
+    <string name="additives">Additives : %1$s</string>
+    <string name="none">None</string>
+    <string name="nutriscore">Nutriscore : %1$s</string>
+</resources>

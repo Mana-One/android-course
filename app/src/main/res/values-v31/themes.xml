@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.App" parent="BaseTheme">
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_empty_saved</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@android:color/holo_blue_bright</item>
+    </style>
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Mon comparateur</string>
+    <string name="barcode">Code barres : %1$l</string>
+    <string name="quantity">Quantité: %1$s</string>
+    <string name="countries">Vendu en : %1$s</string>
+    <string name="ingredients">Ingrédients : %1$s</string>
+    <string name="allergens">Substances allergènes : %1$s</string>
+    <string name="additives">Additifs : %1$s</string>
+    <string name="none">Aucun(e)</string>
+    <string name="nutriscore">Nutriscore : %1$s</string>
+</resources>
