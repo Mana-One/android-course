@@ -1,15 +1,15 @@
 package com.manaois.app.adapter
 
 import android.content.Context
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.manaois.app.DetailsActivity
 import com.manaois.app.R
+import com.manaois.app.SearchListFragmentDirections
 import com.manaois.app.model.Product
 import com.squareup.picasso.Picasso
 
@@ -39,10 +39,9 @@ class ProductAdapter(
         holder.nutriscoreTextView.text = context.getString(R.string.nutriscore, product.score)
 
         holder.imageView.setOnClickListener {
-            val context = holder.view.context
-            val intent = Intent(context, DetailsActivity::class.java)
-            intent.putExtra(DetailsActivity.PRODUCT, product)
-            context.startActivity(intent)
+            val action = SearchListFragmentDirections
+                .actionSearchListFragmentToDetailsFragment(product = product)
+            holder.view.findNavController().navigate(action)
         }
     }
 

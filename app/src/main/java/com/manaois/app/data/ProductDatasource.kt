@@ -28,4 +28,6 @@ class ProductDatasource {
     )
 
     fun loadProducts() : List<Product> = List(10) { data }
+
+    fun getSingle(): Product = data
 }
