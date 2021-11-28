@@ -12,5 +12,6 @@ data class Product(
     val countries: List<String>,
     val ingredients: List<String>,
     val allergens: List<String>,
-    val additives: List<String>
+    val additives: List<String>,
+    val nutritionFacts: NutritionFacts
 ): Serializable

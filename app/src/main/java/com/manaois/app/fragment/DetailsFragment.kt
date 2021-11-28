@@ -1,4 +1,4 @@
-package com.manaois.app
+package com.manaois.app.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
-import com.manaois.app.data.ProductDatasource
+import com.manaois.app.R
 import com.manaois.app.model.Product
 import kotlinx.android.synthetic.main.fragment_details.*
 

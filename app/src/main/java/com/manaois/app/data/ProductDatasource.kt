@@ -24,10 +24,9 @@ class ProductDatasource {
             "arôme naturel"
         ),
         allergens = listOf(),
-        additives = listOf()
+        additives = listOf(),
+        nutritionFacts = NutritionFactsDatasource().loadNutritionFacts()
     )
 
     fun loadProducts() : List<Product> = List(10) { data }
-
-    fun getSingle(): Product = data
 }

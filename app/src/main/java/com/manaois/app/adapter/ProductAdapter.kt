@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.manaois.app.R
-import com.manaois.app.SearchListFragmentDirections
+import com.manaois.app.fragment.SearchListFragmentDirections
 import com.manaois.app.model.Product
 import com.squareup.picasso.Picasso
 

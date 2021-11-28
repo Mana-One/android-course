@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/searchListFragment"
-        android:name="com.manaois.app.SearchListFragment"
+        android:name="com.manaois.app.fragment.SearchListFragment"
         android:label="SearchListFragment" >
         <action
             android:id="@+id/action_searchListFragment_to_detailsFragment"
@@ -14,7 +14,7 @@
     </fragment>
     <fragment
         android:id="@+id/detailsFragment"
-        android:name="com.manaois.app.DetailsFragment"
+        android:name="com.manaois.app.fragment.DetailsFragment"
         android:label="DetailsFragment" >
         <argument
             android:name="product"

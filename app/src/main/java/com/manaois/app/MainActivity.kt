@@ -13,12 +13,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        /*setContentView(R.layout.activity_search)
-
-        val dataset = ProductDatasource().loadProducts()
-        val recyclerView = findViewById<RecyclerView>(R.id.search_list_view)
-        recyclerView.adapter = ProductAdapter(this, dataset)
-        recyclerView.setHasFixedSize(true)*/
         setContentView(R.layout.activity_main)
 
         val navHostFragment = supportFragmentManager

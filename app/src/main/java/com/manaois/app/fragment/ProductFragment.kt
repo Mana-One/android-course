@@ -1,4 +1,4 @@
-package com.manaois.app
+package com.manaois.app.fragment
 
 import android.graphics.Typeface
 import android.os.Bundle
@@ -9,26 +9,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
-import com.manaois.app.data.ProductDatasource
+import com.manaois.app.R
 import com.manaois.app.model.Product
 import com.squareup.picasso.Picasso
 
 class ProductFragment() : Fragment() {
-    companion object {
-        fun newInstance(product: Product): ProductFragment {
-            val fragment = ProductFragment()
-            val args = bundleOf("product" to product)
-            fragment.arguments = args
-            return fragment
-        }
-    }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

@@ -5,16 +5,132 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="30dp"/>
+
     <TextView
-        android:id="@+id/nutrition_text"
+        android:id="@+id/nutrition_header_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Nutrition fragment"
+        android:text="Header"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/guideline_start"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/fats_circle"
+        android:background="@drawable/colored_circle"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/nutrition_header_text"
+        app:layout_constraintStart_toEndOf="@id/guideline_start"></View>
+
+    <TextView
+        android:id="@+id/fats_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Fats Text"
+        android:textSize="15dp"
+        app:layout_constraintTop_toTopOf="@id/fats_circle"
+        app:layout_constraintStart_toEndOf="@id/fats_circle"/>
+
+    <TextView
+        android:id="@+id/fats_nutrition_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nutrition level"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/fats_text"
+        app:layout_constraintTop_toBottomOf="@id/fats_text" />
+
+    <View
+        android:id="@+id/saturated_fats_circle"
+        android:background="@drawable/colored_circle"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/fats_nutrition_text"
+        app:layout_constraintStart_toEndOf="@id/guideline_start" />
+
+    <TextView
+        android:id="@+id/saturated_fats_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Saturated fats Text"
+        android:textSize="15dp"
+        app:layout_constraintTop_toTopOf="@id/saturated_fats_circle"
+        app:layout_constraintStart_toEndOf="@id/saturated_fats_circle"/>
+
+    <TextView
+        android:id="@+id/saturated_fats_nutrition_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nutrition level"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/saturated_fats_text"
+        app:layout_constraintTop_toBottomOf="@id/saturated_fats_text" />
+
+    <View
+        android:id="@+id/sugars_circle"
+        android:background="@drawable/colored_circle"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/saturated_fats_nutrition_text"
+        app:layout_constraintStart_toEndOf="@id/guideline_start" />
+
+    <TextView
+        android:id="@+id/sugars_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Sugars Text"
+        android:textSize="15dp"
+        app:layout_constraintTop_toTopOf="@id/sugars_circle"
+        app:layout_constraintStart_toEndOf="@id/sugars_circle"/>
+
+    <TextView
+        android:id="@+id/sugars_nutrition_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nutrition level"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/sugars_text"
+        app:layout_constraintTop_toBottomOf="@id/sugars_text" />
+
+    <View
+        android:id="@+id/salt_circle"
+        android:background="@drawable/colored_circle"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/sugars_nutrition_text"
+        app:layout_constraintStart_toEndOf="@id/guideline_start" />
+
+    <TextView
+        android:id="@+id/salt_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Fats Text"
+        android:textSize="15dp"
+        app:layout_constraintTop_toTopOf="@id/salt_circle"
+        app:layout_constraintStart_toEndOf="@id/salt_circle"/>
+
+    <TextView
+        android:id="@+id/salt_nutrition_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nutrition level"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/salt_text"
+        app:layout_constraintTop_toBottomOf="@id/salt_text" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

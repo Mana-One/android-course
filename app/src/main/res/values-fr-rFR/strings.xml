@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">Mon comparateur</string>
-    <string name="barcode">Code barres : %1$l</string>
+    <string name="app_name">OpenFoodFacts</string>
+    <string name="barcode">Code barres : %1$d</string>
     <string name="quantity">Quantité: %1$s</string>
     <string name="countries">Vendu en : %1$s</string>
     <string name="ingredients">Ingrédients : %1$s</string>
@@ -8,4 +8,12 @@
     <string name="additives">Additifs : %1$s</string>
     <string name="none">Aucun(e)</string>
     <string name="nutriscore">Nutriscore : %1$s</string>
+    <string name="nutrition_header">Repères nutritionels pour 100g</string>
+    <string name="fats">%1$.3f %2$s de matières grasses / Lipides</string>
+    <string name="saturated_fats">%1$.3f %2$s d\'acides gras saturés</string>
+    <string name="sugars">%1$.3f %2$s de sucres</string>
+    <string name="salt">%1$.3f %2$s de sel</string>
+    <string name="low_nutrition_level">en faible quantité</string>
+    <string name="moderate_nutrition_level">en quantité modérée</string>
+    <string name="high_nutrition_level">en quantité élevée</string>
 </resources>

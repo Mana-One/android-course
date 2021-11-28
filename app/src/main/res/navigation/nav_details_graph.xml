@@ -5,14 +5,14 @@
     app:startDestination="@id/productFragment2">
     <fragment
         android:id="@+id/nutritionFragment2"
-        android:name="com.manaois.app.NutritionFragment"
+        android:name="com.manaois.app.fragment.NutritionFragment"
         android:label="NutritionFragment" />
     <fragment
         android:id="@+id/productFragment2"
-        android:name="com.manaois.app.ProductFragment"
+        android:name="com.manaois.app.fragment.ProductFragment"
         android:label="ProductFragment" />
     <fragment
         android:id="@+id/tableFragment2"
-        android:name="com.manaois.app.TableFragment"
+        android:name="com.manaois.app.fragment.TableFragment"
         android:label="TableFragment" />
 </navigation>

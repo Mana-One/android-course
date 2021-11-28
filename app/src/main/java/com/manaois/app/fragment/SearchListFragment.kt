@@ -1,4 +1,4 @@
-package com.manaois.app
+package com.manaois.app.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,9 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
+import com.manaois.app.R
 import com.manaois.app.adapter.ProductAdapter
 import com.manaois.app.data.ProductDatasource
-import com.manaois.app.databinding.FragmentSearchListBinding
 
 class SearchListFragment : Fragment() {
     override fun onCreateView(
