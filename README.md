@@ -8,7 +8,7 @@ Class: 4AL3
 + Navigation using JetPack's Navigation Component
 + Multi-language: French / English 
 
-## Pages completed 
+## Completed pages
 + Product list (stubbed data) 
 + Details Fragment containing :
     - Product info fragment 
