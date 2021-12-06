@@ -8,11 +8,15 @@
     <string name="additives">Additives : %1$s</string>
     <string name="none">None</string>
     <string name="nutriscore">Nutriscore : %1$s</string>
+
+    <!-- NUTRITION FRAGMENT STRINGS -->
     <string name="nutrition_header">Nutritional indicators for 100g</string>
-    <string name="fats">%1$.3f %2$s of fats</string>
-    <string name="saturated_fats">%1$.3f %2$s of saturated fats</string>
-    <string name="sugars">%1$.3f %2$s of sugars</string>
-    <string name="salt">%1$.3f %2$s of salt</string>
+    <string name="fats">%1$s of fats</string>
+    <string name="saturated_fats">%1$s of saturated fats</string>
+    <string name="sugars">%1$s of sugars</string>
+    <string name="salt">%1$s of salt</string>
+
+    <!-- NUTRITION FRAGMENT LEVEL STRINGS -->
     <string name="low_nutrition_level">low amount</string>
     <string name="moderate_nutrition_level">moderate amount</string>
     <string name="high_nutrition_level">high amount</string>
@@ -29,4 +33,9 @@
     <string name="proteins_row_header">Proteins</string>
     <string name="salt_row_header">Salt</string>
     <string name="sodium_row_header">Sodium</string>
+
+    <!-- MENU STRINGS -->
+    <string name="product_tab_button">Product info</string>
+    <string name="nutrition_tab_button">Nutrition</string>
+    <string name="table_tab_button">Nutrition panel</string>
 </resources>

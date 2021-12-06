@@ -73,8 +73,7 @@ class NutritionFragment : Fragment() {
 
         view.findViewById<TextView>(R.id.fats_text).text = getString(
             R.string.fats,
-            fats.quantityPer100g,
-            fats.unit
+            fats.hundredGramString()
         )
 
         view.findViewById<TextView>(R.id.fats_nutrition_text)
@@ -90,8 +89,7 @@ class NutritionFragment : Fragment() {
 
         view.findViewById<TextView>(R.id.saturated_fats_text).text = getString(
             R.string.saturated_fats,
-            saturatedFats.quantityPer100g,
-            saturatedFats.unit
+            saturatedFats.hundredGramString()
         )
 
         view.findViewById<TextView>(R.id.saturated_fats_nutrition_text)
@@ -107,8 +105,7 @@ class NutritionFragment : Fragment() {
 
         view.findViewById<TextView>(R.id.sugars_text).text = getString(
             R.string.sugars,
-            sugars.quantityPer100g,
-            sugars.unit
+            sugars.hundredGramString()
         )
 
         view.findViewById<TextView>(R.id.sugars_nutrition_text)
@@ -124,8 +121,7 @@ class NutritionFragment : Fragment() {
 
         view.findViewById<TextView>(R.id.salt_text).text = getString(
             R.string.salt,
-            salt.quantityPer100g,
-            salt.unit
+            salt.hundredGramString()
         )
 
         view.findViewById<TextView>(R.id.salt_nutrition_text)

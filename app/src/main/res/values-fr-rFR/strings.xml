@@ -8,11 +8,15 @@
     <string name="additives">Additifs : %1$s</string>
     <string name="none">Aucun(e)</string>
     <string name="nutriscore">Nutriscore : %1$s</string>
+
+    <!-- NUTRITION FRAGMENT STRINGS -->
     <string name="nutrition_header">Repères nutritionels pour 100g</string>
-    <string name="fats">%1$.3f %2$s de matières grasses / Lipides</string>
-    <string name="saturated_fats">%1$.3f %2$s d\'acides gras saturés</string>
-    <string name="sugars">%1$.3f %2$s de sucres</string>
-    <string name="salt">%1$.3f %2$s de sel</string>
+    <string name="fats">%1$s de matières grasses / Lipides</string>
+    <string name="saturated_fats">%1$s d\'acides gras saturés</string>
+    <string name="sugars">%1$s de sucres</string>
+    <string name="salt">%1$s de sel</string>
+
+    <!-- NUTRITION FRAGMENT LEVEL STRINGS -->
     <string name="low_nutrition_level">en faible quantité</string>
     <string name="moderate_nutrition_level">en quantité modérée</string>
     <string name="high_nutrition_level">en quantité élevée</string>
@@ -20,7 +24,7 @@
     <!-- TABLE FRAGMENT STRINGS -->
     <string name="hundred_col_header">Pour 100g</string>
     <string name="portion_col_header">Par portion</string>
-    <string name="energy_row_header">Energie</string>
+    <string name="energy_row_header">Énergie</string>
     <string name="fats_row_header">Matières grasses</string>
     <string name="saturated_fats_row_header">dont Acides gras saturés</string>
     <string name="carbohydrates_row_header">Glucides</string>
@@ -29,4 +33,9 @@
     <string name="proteins_row_header">Protéines</string>
     <string name="salt_row_header">Sel</string>
     <string name="sodium_row_header">Sodium</string>
+
+    <!-- MENU STRINGS -->
+    <string name="product_tab_button">Fiche produit</string>
+    <string name="nutrition_tab_button">Nutrition</string>
+    <string name="table_tab_button">Infos nutritionnelles</string>
 </resources>
