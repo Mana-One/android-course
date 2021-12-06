@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/app/app/src/main/res/drawable/colored_circle.xml" value="0.1390625" />
         <entry key="..\:/AndroidStudioProjects/app/app/src/main/res/drawable/colored_sphere.xml" value="0.2703125" />
         <entry key="..\:/AndroidStudioProjects/app/app/src/main/res/drawable/ic_calories.xml" value="0.14635416666666667" />
         <entry key="..\:/AndroidStudioProjects/app/app/src/main/res/drawable/ic_empty_saved.xml" value="0.14635416666666667" />
@@ -19,13 +20,16 @@
         <entry key="..\:/AndroidStudioProjects/app/app/src/main/res/layout/activity_product.xml" value="0.152" />
         <entry key="..\:/AndroidStudioProjects/app/app/src/main/res/layout/activity_search.xml" value="0.13496376811594202" />
         <entry key="..\:/AndroidStudioProjects/app/app/src/main/res/layout/activity_search_item.xml" value="0.13496376811594202" />
+        <entry key="..\:/AndroidStudioProjects/app/app/src/main/res/layout/activity_table_row.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProjects/app/app/src/main/res/layout/activuty_nutrition.xml" value="0.12360688956433637" />
         <entry key="..\:/AndroidStudioProjects/app/app/src/main/res/layout/details_fragment.xml" value="0.12360688956433637" />
         <entry key="..\:/AndroidStudioProjects/app/app/src/main/res/layout/details_menu.xml" value="0.12360688956433637" />
         <entry key="..\:/AndroidStudioProjects/app/app/src/main/res/layout/fragment_details.xml" value="0.12360688956433637" />
         <entry key="..\:/AndroidStudioProjects/app/app/src/main/res/layout/fragment_nutrition.xml" value="0.264" />
+        <entry key="..\:/AndroidStudioProjects/app/app/src/main/res/layout/fragment_product.xml" value="0.1265625" />
         <entry key="..\:/AndroidStudioProjects/app/app/src/main/res/layout/fragment_search_list.xml" value="0.13027618551328818" />
-        <entry key="..\:/AndroidStudioProjects/app/app/src/main/res/layout/fragment_table.xml" value="0.11639492753623189" />
+        <entry key="..\:/AndroidStudioProjects/app/app/src/main/res/layout/fragment_table.xml" value="0.4" />
+        <entry key="..\:/AndroidStudioProjects/app/app/src/main/res/layout/fragment_table_row.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProjects/app/app/src/main/res/layout/main_frag.xml" value="0.12360688956433637" />
         <entry key="..\:/AndroidStudioProjects/app/app/src/main/res/menu/details_menu.xml" value="0.24814814814814815" />
         <entry key="..\:/AndroidStudioProjects/app/app/src/main/res/menu/product_details_tabs.xml" value="0.24814814814814815" />

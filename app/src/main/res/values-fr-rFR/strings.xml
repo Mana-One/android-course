@@ -16,4 +16,17 @@
     <string name="low_nutrition_level">en faible quantité</string>
     <string name="moderate_nutrition_level">en quantité modérée</string>
     <string name="high_nutrition_level">en quantité élevée</string>
+
+    <!-- TABLE FRAGMENT STRINGS -->
+    <string name="hundred_col_header">Pour 100g</string>
+    <string name="portion_col_header">Par portion</string>
+    <string name="energy_row_header">Energie</string>
+    <string name="fats_row_header">Matières grasses</string>
+    <string name="saturated_fats_row_header">dont Acides gras saturés</string>
+    <string name="carbohydrates_row_header">Glucides</string>
+    <string name="sugars_row_header">dont Sucres</string>
+    <string name="fibers_row_header">Fibres alimentaires</string>
+    <string name="proteins_row_header">Protéines</string>
+    <string name="salt_row_header">Sel</string>
+    <string name="sodium_row_header">Sodium</string>
 </resources>

@@ -5,16 +5,417 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:id="@+id/table_text"
+<!--    <com.manaois.app.view.TableCellView
+        android:id="@+id/empty_cell"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Table fragment"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:border="bottom|right"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_weight="1" />
+
+    <com.manaois.app.view.TableCellView
+        android:id="@+id/energy_header_cell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Header 1"
+        app:border="bottom|right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/empty_cell"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <com.manaois.app.view.TableCellView
+        android:id="@+id/fats_header_cell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Header 1"
+        app:border="bottom|right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/energy_header_cell"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <com.manaois.app.view.TableCellView
+        android:id="@+id/saturated_fats_header_cell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Header 1"
+        app:border="bottom|right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fats_header_cell"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <com.manaois.app.view.TableCellView
+        android:id="@+id/carbohydrates_header_cell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Header 1"
+        app:border="bottom|right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/saturated_fats_header_cell"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <com.manaois.app.view.TableCellView
+        android:id="@+id/sugars_header_cell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Header 1"
+        app:border="bottom|right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/carbohydrates_header_cell"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <com.manaois.app.view.TableCellView
+        android:id="@+id/fibers_header_cell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Header 1"
+        app:border="bottom|right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sugars_header_cell"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <com.manaois.app.view.TableCellView
+        android:id="@+id/proteins_header_cell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Header 1 proteins for life"
+        app:border="bottom|right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fibers_header_cell"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <com.manaois.app.view.TableCellView
+        android:id="@+id/salt_header_cell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Header 1"
+        app:border="bottom|right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/proteins_header_cell"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <com.manaois.app.view.TableCellView
+        android:id="@+id/sodium_header_cell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Header 1"
+        app:border="right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/salt_header_cell"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="empty_cell,energy_header_cell,fats_header_cell,saturated_fats_header_cell,carbohydrates_header_cell,sugars_header_cell,fibers_header_cell,proteins_header_cell,salt_header_cell,sodium_header_cell"/>
+
+    <com.manaois.app.view.TableCellView
+        android:id="@+id/hundred_grams_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Header"
+        app:border="bottom|right"
+        app:layout_constraintStart_toEndOf="@id/barrier1"
+        app:layout_constraintEnd_toStartOf="@id/barrier2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_weight="1" />
+
+    <com.manaois.app.view.TableCellView
+        android:id="@+id/hundred_grams_energy_cell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Content"
+        app:border="bottom|right"
+        app:layout_constraintStart_toEndOf="@id/barrier1"
+        app:layout_constraintEnd_toStartOf="@id/barrier2"
+        app:layout_constraintTop_toBottomOf="@id/hundred_grams_header"
+        app:layout_constraintHorizontal_weight="1" />
+
+    <com.manaois.app.view.TableCellView
+        android:id="@+id/hundred_grams_fats_cell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Content"
+        app:border="bottom|right"
+        app:layout_constraintStart_toEndOf="@id/barrier1"
+        app:layout_constraintEnd_toStartOf="@id/barrier2"
+        app:layout_constraintTop_toBottomOf="@id/hundred_grams_energy_cell"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <com.manaois.app.view.TableCellView
+        android:id="@+id/hundred_grams_saturated_fats_cell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Content"
+        app:border="bottom|right"
+        app:layout_constraintStart_toEndOf="@+id/barrier1"
+        app:layout_constraintEnd_toStartOf="@id/barrier2"
+        app:layout_constraintTop_toBottomOf="@id/hundred_grams_fats_cell"
+        app:layout_constraintHorizontal_weight="1" />
+
+    <com.manaois.app.view.TableCellView
+        android:id="@+id/hundred_grams_carbohydrates_cell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Content"
+        app:border="bottom|right"
+        app:layout_constraintStart_toEndOf="@id/barrier1"
+        app:layout_constraintEnd_toStartOf="@id/barrier2"
+        app:layout_constraintTop_toBottomOf="@id/hundred_grams_saturated_fats_cell"
+        app:layout_constraintHorizontal_weight="1" />
+
+    <com.manaois.app.view.TableCellView
+        android:id="@+id/hundred_grams_sugars_cell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Content"
+        app:border="bottom|right"
+        app:layout_constraintStart_toEndOf="@id/barrier1"
+        app:layout_constraintEnd_toStartOf="@id/barrier2"
+        app:layout_constraintTop_toBottomOf="@id/hundred_grams_carbohydrates_cell"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <com.manaois.app.view.TableCellView
+        android:id="@+id/hundred_grams_fibers_cell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Content"
+        app:border="bottom|right"
+        app:layout_constraintStart_toEndOf="@id/barrier1"
+        app:layout_constraintEnd_toStartOf="@id/barrier2"
+        app:layout_constraintTop_toBottomOf="@+id/hundred_grams_sugars_cell"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <com.manaois.app.view.TableCellView
+        android:id="@+id/hundred_grams_proteins_cell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Content"
+        app:border="bottom|right"
+        app:layout_constraintStart_toEndOf="@id/barrier1"
+        app:layout_constraintEnd_toStartOf="@id/barrier2"
+        app:layout_constraintTop_toBottomOf="@+id/hundred_grams_fibers_cell"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <com.manaois.app.view.TableCellView
+        android:id="@+id/hundred_grams_salt_cell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Content"
+        app:border="bottom|right"
+        app:layout_constraintStart_toEndOf="@id/barrier1"
+        app:layout_constraintEnd_toStartOf="@id/barrier2"
+        app:layout_constraintTop_toBottomOf="@+id/hundred_grams_proteins_cell"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <com.manaois.app.view.TableCellView
+        android:id="@+id/hundred_grams_sodium_cell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Content"
+        app:border="right"
+        app:layout_constraintStart_toEndOf="@id/barrier1"
+        app:layout_constraintEnd_toStartOf="@id/barrier2"
+        app:layout_constraintTop_toBottomOf="@id/hundred_grams_salt_cell"
+        app:layout_constraintHorizontal_weight="1" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="start"
+        app:constraint_referenced_ids="portion_header,portion_energy_cell,portion_fats_cell,portion_saturated_fats_cell,portion_carbohydrates_cell,portion_sugars_cell,portion_fibers_cell,portion_proteins_cell,portion_salt_cell,portion_sodium_cell"/>
+
+    <com.manaois.app.view.TableCellView
+        android:id="@+id/portion_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Header"
+        app:border="bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_weight="1" />
+
+    <com.manaois.app.view.TableCellView
+        android:id="@+id/portion_energy_cell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Content"
+        app:border="bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/portion_header"
+        app:layout_constraintHorizontal_weight="1" />
+
+    <com.manaois.app.view.TableCellView
+        android:id="@+id/portion_fats_cell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Content"
+        app:border="bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/portion_energy_cell"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <com.manaois.app.view.TableCellView
+        android:id="@+id/portion_saturated_fats_cell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Content"
+        app:border="bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/portion_fats_cell"
+        app:layout_constraintHorizontal_weight="1" />
+
+    <com.manaois.app.view.TableCellView
+        android:id="@+id/portion_carbohydrates_cell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Content"
+        app:border="bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/portion_saturated_fats_cell"
+        app:layout_constraintHorizontal_weight="1" />
+
+    <com.manaois.app.view.TableCellView
+        android:id="@+id/portion_sugars_cell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Content"
+        app:border="bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/portion_carbohydrates_cell"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <com.manaois.app.view.TableCellView
+        android:id="@+id/portion_fibers_cell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Content"
+        app:border="bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/portion_sugars_cell"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <com.manaois.app.view.TableCellView
+        android:id="@+id/portion_proteins_cell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Content"
+        app:border="bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/portion_fibers_cell"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <com.manaois.app.view.TableCellView
+        android:id="@+id/portion_salt_cell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Content"
+        app:border="bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/portion_proteins_cell"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <com.manaois.app.view.TableCellView
+        android:id="@+id/portion_sodium_cell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Content"
+        app:border="right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/portion_salt_cell"
+        app:layout_constraintHorizontal_weight="1" />-->
+
+    <include
+        layout="@layout/fragment_table_row"
+        android:id="@+id/header_row"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        layout="@layout/fragment_table_row"
+        android:id="@+id/energy_row"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_row" />
+
+    <include
+        layout="@layout/fragment_table_row"
+        android:id="@+id/fats_row"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/energy_row" />
+
+    <include
+        layout="@layout/fragment_table_row"
+        android:id="@+id/saturated_fats_row"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fats_row" />
+
+    <include
+        layout="@layout/fragment_table_row"
+        android:id="@+id/carbohydrates_row"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/saturated_fats_row" />
+
+    <include
+        layout="@layout/fragment_table_row"
+        android:id="@+id/sugars_row"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/carbohydrates_row" />
+
+    <include
+        layout="@layout/fragment_table_row"
+        android:id="@+id/fibers_row"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sugars_row" />
+
+    <include
+        layout="@layout/fragment_table_row"
+        android:id="@+id/proteins_row"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fibers_row" />
+
+    <include
+        layout="@layout/fragment_table_row"
+        android:id="@+id/salt_row"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/proteins_row" />
+
+    <include
+        layout="@layout/fragment_table_row"
+        android:id="@+id/sodium_row"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/salt_row" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

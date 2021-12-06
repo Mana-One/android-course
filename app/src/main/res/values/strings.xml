@@ -16,4 +16,17 @@
     <string name="low_nutrition_level">low amount</string>
     <string name="moderate_nutrition_level">moderate amount</string>
     <string name="high_nutrition_level">high amount</string>
+
+    <!-- TABLE FRAGMENT STRINGS -->
+    <string name="hundred_col_header">Per 100g</string>
+    <string name="portion_col_header">Per portion</string>
+    <string name="energy_row_header">Energy</string>
+    <string name="fats_row_header">Fats</string>
+    <string name="saturated_fats_row_header">of which Saturated Fats</string>
+    <string name="carbohydrates_row_header">Carbohydrates</string>
+    <string name="sugars_row_header">of which Sugars</string>
+    <string name="fibers_row_header">Fibers</string>
+    <string name="proteins_row_header">Proteins</string>
+    <string name="salt_row_header">Salt</string>
+    <string name="sodium_row_header">Sodium</string>
 </resources>

@@ -28,5 +28,7 @@ class ProductDatasource {
         nutritionFacts = NutritionFactsDatasource().loadNutritionFacts()
     )
 
-    fun loadProducts() : List<Product> = List(10) { data }
+    private val dataset: List<Product> = List(10) { data }
+
+    fun loadProducts() : List<Product> = dataset
 }
